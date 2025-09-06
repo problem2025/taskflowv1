@@ -77,3 +77,22 @@ This project will allow you to practice the following skills:
 *   **Scalable Complexity:** You can start with the basic CRUD and gradually add the bonus features one by one, making it as simple or as challenging as you want.
 
 This should provide a solid foundation for you to practice and demonstrate your full-stack .NET capabilities. Good luck
+
+**Project Structure**
+TaskFlow/
+├── Backend/ (ASP.NET Core Web API)
+│   ├── Controllers/
+│   ├── Data/
+│   ├── DTOs/
+│   ├── Models/
+│   ├── Migrations/
+│   └── Program.cs
+├── Frontend/ (Angular)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   ├── models/
+│   │   │   └── app.module.ts
+│   │   └── styles.css
+└── README.md
