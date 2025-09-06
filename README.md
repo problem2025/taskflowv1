@@ -96,3 +96,33 @@ TaskFlow/
 │   │   │   └── app.module.ts
 │   │   └── styles.css
 └── README.md
+
+**Setup Instructions**
+**Backend Setup:**
+1)Create a new ASP.NET Core Web API project
+2)Add the Entity Framework Core packages:
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+3)Add the CORS middleware as shown in the Program.cs
+4)Run the migrations:
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+5)Run the API project
+
+**Frontend Setup:**
+1)Create a new Angular project:
+ng new taskflow-frontend
+cd taskflow-frontend
+
+2)Replace the generated files with the provided code
+3)Install Angular Material (optional for enhanced UI):
+ng add @angular/material
+4)Update the API URL in task.service.ts if needed
+
+5)Run the Angular app:
+ng serve
+
+This implementation provides a complete full-stack solution with all the CRUD operations, filtering, and a clean UI. The backend uses SQLite for simplicity, but you can easily switch to SQL Server by updating the connection string and adding the appropriate NuGet packages.
